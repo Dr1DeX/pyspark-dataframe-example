@@ -22,17 +22,19 @@ I used ```conda``` as a virtual environment:
     conda install openjdk
     conda install -c conda-forge findspark
 
-### 3) Download archive [spark-hadoop](https://spark.apache.org/downloads.html) and unpack to dir ``C:\apps``
+### 3) Downloading [Java 8](https://www.oracle.com/cis/java/technologies/downloads/) or later and [OpenJDK](https://jdk.java.net/)
+
+### 4) Download archive [spark-hadoop](https://spark.apache.org/downloads.html) and unpack to dir ``C:\apps``
 
 P.S Create dir
 
 ----
 
-### 4) Setting system environment variables
+### 5) Setting system environment variables
 
 ### Windows:
 
-1) Go to the 'Environment Variables' section
+1) Go to the ``Environment Variables`` section
 2) Create three variables ``HADOOP_HOME``, ``SPARK_HOME``, ``JAVA_HOME`` 
 and set the path where unpack ``spark-hadoop`` is stored, for ``JAVA_HOME``, indicate the path to jdk(
 Usually this ``C:\\Program Fiiles\Java\jdk_x``)
@@ -49,7 +51,7 @@ Our environment for PySpark is ready
 
 -----
 
-### 5) Import requirements modules
+### 6) Import requirements modules
 
     from pyspark.sql import SparkSession, Row
     from pyspark.sql.functions import col, count
