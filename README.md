@@ -62,3 +62,5 @@ Our environment for PySpark is ready
     findspark.find() # Exports required system environment variables
 
     ....
+
+## Developer: Dr1DeX
